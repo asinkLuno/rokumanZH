@@ -1,0 +1,30 @@
+# Audio files
+*.mp3
+*.wav
+*.m4a
+*.flac
+
+# ASR output directories
+asr_outputs/
+outputs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ruff
+.ruff_cache/
