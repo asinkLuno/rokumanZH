@@ -3,9 +3,9 @@ import click
 
 
 @click.command()
-@click.argument('audio_file', type=click.Path(exists=True))
+@click.argument("audio_file", type=click.Path(exists=True))
 def transcribe(audio_file):
-    with open('./docs/术语表.md', 'r') as f:
+    with open("./docs/术语表.md", "r") as f:
         context_info = f.read().strip()
 
     client = Client("https://4e47b675ea4015a607.gradio.live/")
@@ -20,7 +20,7 @@ def transcribe(audio_file):
         top_p=1,
         do_sample=False,
         context_info=context_info,
-        api_name="/transcribe_wrapper"
+        api_name="/transcribe_wrapper",
     )
     print(result)
 
