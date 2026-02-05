@@ -5,8 +5,10 @@
 *.flac
 
 # ASR output directories
-asr_outputs/
 outputs/
+# Track jsonl files in asr_outputs
+asr_outputs/*
+!asr_outputs/*.jsonl
 
 # Python cache
 __pycache__/
